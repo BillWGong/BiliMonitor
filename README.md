@@ -19,7 +19,7 @@ macOS 上的 B 站 UP 主更新监控。每 60 秒检查一次指定 UP 主的�
 
 ## 安装
 
-从 [Releases](../../releases) 下载：
+从 [Releases](https://github.com/BillWGong/BiliMonitor/releases) 下载：
 
 - `BiliMonitor-x.y.z.pkg`：双击安装，应用会放到 `/Applications`
 - 或 `BiliMonitor-x.y.z.zip`：解压后把 `BiliMonitor.app` 拖入「应用程序」

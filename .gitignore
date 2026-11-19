@@ -1,0 +1,10 @@
+config.json
+state.json
+monitor.log*
+launchd.log
+run.out
+run.pid
+build/
+dist/
+__pycache__/
+.DS_Store

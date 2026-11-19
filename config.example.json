@@ -1,0 +1,14 @@
+{
+  "uid": "",
+  "interval_seconds": 60,
+  "notify_on_start": false,
+  "smtp": {
+    "host": "smtp.qq.com",
+    "port": 465,
+    "use_ssl": true,
+    "username": "",
+    "password": "",
+    "sender_name": "B站更新监控",
+    "to": []
+  }
+}

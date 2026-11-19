@@ -1,0 +1,15 @@
+#!/bin/zsh
+set -u
+
+RES="$(cd "$(dirname "$0")/../Resources" && pwd)"
+SUPPORT="$HOME/Library/Application Support/BiliMonitor"
+mkdir -p "$SUPPORT"
+
+if [[ ! -f "$SUPPORT/config.json" ]]; then
+  cp "$RES/config.example.json" "$SUPPORT/config.json"
+  open -e "$SUPPORT/config.json"
+  osascript -e 'display alert "BiliMonitor" message "已生成配置文件，请填写 UP 主 UID、收件邮箱与 SMTP 授权码，保存后重新打开本应用。"' >/dev/null 2>&1
+  exit 0
+fi
+
+exec /usr/bin/caffeinate -i /usr/bin/env python3 "$RES/monitor.py"
